@@ -18,7 +18,10 @@ Analyzing and predicting Spotify song popularity based on audio and descriptive 
 
  ## Data Cleaning
 - Data Cleaning is a crucial step to to prepare clean and consistent data before proceeding to the exploratory data analysis (EDA) and model building stages.
-- Checked for null values in the dataset. Since only a small number of null values were found, they were simply removed. (Nanti masukin gambar)
+- Checked for null values in the dataset. Since only a small number of null values were found, they were simply removed. 
+  ![](/Data%20Cleaning/null%20values%20.png)
+  
+  ![](/Data%20Cleaning/null%20values(2).png)
 - Converted the "track_album_release_date" column to datetime format to facilitate easier analysis and visualization during EDA, as well as to support effective model building.
 - Converted all categorical columns to category type to optimize memory usage and processing efficiency, while also preparing the data for modeling and simplifying validation.
 - Create the feature list by excluding the non-feature columns.
@@ -27,9 +30,12 @@ Analyzing and predicting Spotify song popularity based on audio and descriptive 
 ## EDA
 - Performed descriptive statistics using 'df.describe()' separately on numerical and categorical features to understand their distributions.
 - Created distribution plots and boxplots to analyze the distribution of numerical features grouped by the popularity label, as well as to detect outliers.
-- Generated a correlation matrix to examine linear relationships between numerical features and to identify potential multicollinearity. (Nanti masukin gambar)
+- Generated a correlation matrix to examine linear relationships between numerical features and to identify potential multicollinearity.
+  ![](/Graphic/Correlation%20matrix%20of%20numerical%20features%20with%20track%20popularity.png)
 - Created scatter plots and pairplot to explore the relationship between individual numerical features and the popularity score.
-- Performed two-sample t-tests on numerical features to assess whether the differences in means between popular and non-popular tracks are statistically significant. (Nanti masukin gambar)
+- Performed two-sample t-tests on numerical features to assess whether the differences in means between popular and non-popular tracks are statistically significant.
+  
+  ![](/Feature%20Engineering/T-test.png)
 - Calculated the Pearson correlation between numerical features and the popularity score, and visualized the results using a bar plot.
 - Created trend plots showing the average popularity score and the number of tracks over the years.
 - Explored categorical features by plotting average popularity trends by genre and subgenre, and using count plots to show the distribution of mode and key.
