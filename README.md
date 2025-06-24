@@ -34,11 +34,11 @@ Analyzing and predicting Spotify song popularity based on audio and descriptive 
 - Created trend plots showing the average popularity score and the number of tracks over the years.
 - Explored categorical features by plotting average popularity trends by genre and subgenre, and using count plots to show the distribution of mode and key.
 
-##Feature Engineering
+## Feature Engineering
 - Handled skewed features using log transformation to improve model performance.
 - Defined the features and target variables in the final dataset
 
-##Model Preparation
+## Model Preparation
 - Applied Label Encoding to the target variable for classification.
 - Divided the dataset into training and testing sets for both features and target variables with an 80:20 ratio.
 - Used feature scaling for models that are sensitive to the scale of input data.
