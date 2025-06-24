@@ -18,7 +18,7 @@ Analyzing and predicting Spotify song popularity based on audio and descriptive 
 
  ## Data Cleaning
 - Data Cleaning is a crucial step to to prepare clean and consistent data before proceeding to the exploratory data analysis (EDA) and model building stages.
-- Checked for null values in the dataset. Since only a small number of null values were found, they were simply removed.
+- Checked for null values in the dataset. Since only a small number of null values were found, they were simply removed. (Nanti masukin gambar)
 - Converted the "track_album_release_date" column to datetime format to facilitate easier analysis and visualization during EDA, as well as to support effective model building.
 - Converted all categorical columns to category type to optimize memory usage and processing efficiency, while also preparing the data for modeling and simplifying validation.
 - Create the feature list by excluding the non-feature columns.
@@ -27,9 +27,9 @@ Analyzing and predicting Spotify song popularity based on audio and descriptive 
 ## EDA
 - Performed descriptive statistics using 'df.describe()' separately on numerical and categorical features to understand their distributions.
 - Created distribution plots and boxplots to analyze the distribution of numerical features grouped by the popularity label, as well as to detect outliers.
-- Generated a correlation matrix to examine linear relationships between numerical features and to identify potential multicollinearity.
+- Generated a correlation matrix to examine linear relationships between numerical features and to identify potential multicollinearity. (Nanti masukin gambar)
 - Created scatter plots and pairplot to explore the relationship between individual numerical features and the popularity score.
-- Performed two-sample t-tests on numerical features to assess whether the differences in means between popular and non-popular tracks are statistically significant.
+- Performed two-sample t-tests on numerical features to assess whether the differences in means between popular and non-popular tracks are statistically significant. (Nanti masukin gambar)
 - Calculated the Pearson correlation between numerical features and the popularity score, and visualized the results using a bar plot.
 - Created trend plots showing the average popularity score and the number of tracks over the years.
 - Explored categorical features by plotting average popularity trends by genre and subgenre, and using count plots to show the distribution of mode and key.
@@ -42,6 +42,18 @@ Analyzing and predicting Spotify song popularity based on audio and descriptive 
 - Applied Label Encoding to the target variable for classification.
 - Divided the dataset into training and testing sets for both features and target variables with an 80:20 ratio.
 - Used feature scaling for models that are sensitive to the scale of input data.
+
+## Modelling
+- Created three classification models, namely **K-Nearest Neighbors (KNN)**, **Support Vector Machine (SVM)**, and **Random Forest Classifier**.
+- Used GridSearchCV for each model to find the optimal parameters.
+- The best estimator from GridSearchCV was trained on the training dataset.
+- Made predictions on the test dataset using the trained model.
+- Generated the confusion matrix and calculated the accuracy score for the model's predictions.
+- Created a classification report to evaluate precision, recall, and F1-score.
+- Calculated both training and test accuracy to assess model performance.
+
+
+
 
 
 
