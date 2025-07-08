@@ -19,6 +19,7 @@ Analyzing and predicting Spotify song popularity based on audio and descriptive 
  ## Data Cleaning
 - Data Cleaning is a crucial step to to prepare clean and consistent data before proceeding to the exploratory data analysis (EDA) and model building stages.
 - Checked for null values in the dataset. Since only a small number of null values were found, they were simply removed. 
+
   ![](/Data%20Cleaning/null%20values%20.png)
   
   ![](/Data%20Cleaning/null%20values(2).png)
